@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail1">
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hanamizuki" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hanamizuki"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
+        app:layout_constraintEnd_toStartOf="@+id/ratingBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.Holo.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:numStars="5"
+        android:rating="2.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image" />
+
+    <TextView
+        android:id="@+id/Genre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Drama, Romance"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <TextView
+        android:id="@+id/Sinopsis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Keduanya bertemu secara kebetulan di sebuah kereta, perjalanan mereka terhambat padahal Saki saat itu harus mengikuti ujian masuk universitas di Tokyo. Dengan berbekal kenekatan Gohei membantu Saki untuk sampai di tujuannya. Perjalanan kisah mereka dimulai dari sini, hubungan keduanya mulai terjalin. hanamizuki10hanamizuki11hanamizuki12 Akan tetapi Saki yang diterima di Tokyo harus meninggalkan Gohei yang ingin meneruskan usaha ayahnya sebagai seorang nelayan. Hubungan jarak jauh menjadi pilihan yang harus mereka jalani. Namun, hubungan jarak jauh memiliki banyak rintangan bahkan ibunya Saki mengatakan untuk tidak menjalani hubungan seperti itu, karena pengalaman ibunya dengan mendiang ayahnya Saki yang fotografer dimana dia selalu berkeliling dunia. Sebenarnya Saki bercita-cita bersekolah di Tokyo karena motivasi dari ayahnya. Saki ingin mengunjungi sebuah tempat di mana dia dilahirkan yaitu di Kanada, Gohei pun juga ingin melihatnya."
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Genre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

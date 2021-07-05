@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail1">
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/orange" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Orange"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
+        app:layout_constraintEnd_toStartOf="@+id/ratingBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.Holo.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:numStars="5"
+        android:rating="3.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image" />
+
+    <TextView
+        android:id="@+id/Genre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Romance, Manga"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <TextView
+        android:id="@+id/Sinopsis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Film “Orange” Live Action menceritakan tentang seorang gadis yang bernama Naho Takamiya diperankan oleh Tao Tsuchiya yang secara tiba-tiba mendapatkan sebuah surat yang di tulis oleh dirinya di masa depan (10 tahun mendatang). Pertama kali Ia menerima hal tersebut tidak mempercayainya dan setelah beberapa kejadian yang di alami Naho sama dengan yang tertulis dengan apa yang ada di surat terssebut akhirnya Ia mempercayai surat tersebut.     Di dalam surat tersebut semuanya sesuai dengan kejadian yang di alaminya termasuk kedatangan seorang murid SMA pindahan yang bernama Kakeru Naruse diperankan oleh Kento Yamazaki.  Selain itu isi surat juga tertulis bahwa dirinya akan menyukai Kakeru dan harus menjaganya terus. Kakeru Naruse dilakukan bekas luka emosional dari bunuh diri ibunya dan ia meninggal satu tahun kemudian. 2 Tahun sisa SMA Naho Takamiya dengan sebuah pengetahuan dari surat masa depan nya Ia mengambil tindakan untuk mengubah masa depannya."
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Genre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
